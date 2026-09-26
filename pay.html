@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../mybookshop/cssfolder/style.css">
+</head>
+
+<body>
+    <div class="maintopic">
+        <div>
+            <h1 class="Bookshop">My Bookshop</h1>
+            <h3 class="tips">Weclome to my bookshop, you can click the <strong><span
+                        style="color: deeppink;">"pay"</span></strong> to make a payment for your favorite book</h3>
+        </div>
+
+        <div class="different_parts" style="margin-bottom: 60px" ;>
+            <div class="parts">
+                <a href="../mybookshop/index.html">Home</a>
+            </div>
+            <div class="parts">
+                <a href="#">About Us</a>
+            </div>
+            <div class="parts">
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="area">
+            <div class="pay_choice">
+                <div class="card_choice">
+                    <!--Mastercard-->
+                    <div class="mastercard">
+                        <img class="card"
+                            src="../mybookshop/imgfolder/mastercard.jpeg" alt="wrong">
+                    </div>
+                    <!--ApplePAY-->
+                    <div class="applepay">
+                        <img class="card"
+                            src="../mybookshop/imgfolder/apple_pay.jpg" alt="wrong">
+                    </div>
+                    <!--Visa-->
+                    <div class="visa">
+                        <img class="card"
+                            src="../mybookshop/imgfolder/visa.jpeg" alt="wrong">
+                    </div>
+                </div>
+            </div>
+
+            <div class="information_area">
+                <div class="error-message" id="errorMsg"></div>
+                <div class="information">
+                    <!--card number-->
+                    <div class="card_number">
+                        <strong><span style="font-size:40px;color: #790202;">Card Number :</span></strong>
+                        <input class="input-base" type="text" placeholder="input the card number" id="cardnumber">
+                    </div>
+                    <!--expiration date-->
+                    <div class="expiration_date">
+                        <strong><span style="font-size:40px;color: #790202;">Expiration Date :</span></strong>
+                        <input type="date" class="input-base" placeholder="input the expiration date" id="expirationdate">
+                    </div>
+                    <!--security number-->
+                    <div class="security_number">
+                        <strong><span style="font-size:40px;color: #790202;">Security Number :</span></strong>
+                        <input class="input-base" type="password" placeholder="input the security number" id="password">
+                    </div>
+            </div>
+            <div><button class="submit-btn" onclick="validatePayment()">Continue</button></div>
+        </div>
+    </div>
+    <script src="../mybookshop/jsfolder/determineinformation.js"></script>
+    <script src="../mybookshop/jsfolder/cardchoice.js"></script>
+</body>
+
+</html>
